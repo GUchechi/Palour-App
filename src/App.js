@@ -8,7 +8,7 @@ import Pricing from 'components/Pricing';
 import ScrollToTop from 'components/ScrollToTop';
 import Services from 'components/Services';
 import Skills from 'components/Skills';
-import Testimonials from 'components/Testimonials';
+import Testimonials from 'components/Testimonials/Testimonials';
 import './App.css';
 
 function App() {
