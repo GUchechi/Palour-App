@@ -34,6 +34,7 @@ const Portfolio = () => {
 const Section = styled.section`
   min-height: 100vh;
   padding-bottom: 2rem;
+  margin-Top: 7rem;
   background-color: var(--secondary-color);
 .grid {
   display: grid;
