@@ -7,39 +7,39 @@ const Contact = () => {
     <Section>
       <Title value="Contact" />
       <div className="contact">
-      <div className="contact_title">
-        <p>Stay in touch with me</p>
-        <h2>Quick Contact</h2>
-      </div>
-      <div className="contact_data">
-        <div className="contact_data_description">
-          <h4>Just to say hi!!!</h4>
-          <p>
-              If you have any questions simply use the following contact details.
-            </p>
+        <div className="contact_title">
+          <p>Stay in touch with me</p>
+          <h2>Quick Contact</h2>
+        </div>
+        <div className="contact_data">
+          <div className="contact_data_description">
+            <h4>Just to say hi!!!</h4>
             <p>
-              Business Owners to take their Online Presence 
-              to the next level. We are in the business of Bulk SMS, Digital Marketing.
-            </p>
-            <div>
+                If you have any questions simply use the following contact details.
+              </p>
               <p>
-                  <strong>Address:</strong> 332, Long Fly, Abuja,
-                </p>
+                Business Owners to take their Online Presence 
+                to the next level. We are in the business of Bulk SMS, Digital Marketing.
+              </p>
+              <div>
                 <p>
-                  <strong>Email:</strong> blossoms@gmail.com
-                </p>
-                <p>
-                  <strong>Website:</strong> www.blossoms.com
-                </p>
-            </div>
+                    <strong>Address:</strong> 332, Long Fly, Abuja,
+                  </p>
+                  <p>
+                    <strong>Email:</strong> blossoms@gmail.com
+                  </p>
+                  <p>
+                    <strong>Website:</strong> www.blossoms.com
+                  </p>
+              </div>
+          </div>
+          <div className="contact_data_form">
+          <input type="text" placeholder='name' />
+              <input type="email" placeholder='email' />
+              <textarea placeholder='message'></textarea>
+              <button>Send Message</button>
+          </div>
         </div>
-        <div className="contact_data_form">
-        <input type="text" placeholder='name' />
-            <input type="email" placeholder='email' />
-            <textarea placeholder='message'></textarea>
-            <button>Send Message</button>
-        </div>
-      </div>
       </div>
     </Section>
   )
