@@ -9,11 +9,12 @@ import ScrollToTop from 'components/ScrollToTop';
 import Services from 'components/Services';
 import Skills from 'components/Skills';
 import Testimonials from 'components/Testimonials/Testimonials';
+import { motion } from 'framer-motion';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <motion.div initial="hidden" animate="show">
       <Home /> 
       <Services />
       <Portfolio /> 
@@ -25,7 +26,7 @@ function App() {
       <Contact />
       <Footer />
       <ScrollToTop />
-    </div>
+    </motion.div>
   );
 }
 
