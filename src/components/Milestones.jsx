@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { motion } from 'framer-motion';
 import { useScroll } from './useScroll'
 import { milestonesAnimations } from 'animation'
+import NumberCounter from 'number-counter'
 
 const Milestones = () => {
   const [element, controls] = useScroll();
@@ -15,17 +16,17 @@ const Milestones = () => {
     {
       image: milestone1,
       data: "Client Served",
-      amount: "877",
+      amount: "4877",
     },
     {
       image: milestone2,
       data: "of raw data",
-      amount: "1.4M",
+      amount: "5000",
     },
     {
       image: milestone3,
       data: "Reviews",
-      amount: "5.4K",
+      amount: "3900",
     },
 ];
 
@@ -48,7 +49,9 @@ const Milestones = () => {
               duration: 0.8,
             }}
             >
-              <p>{amount}</p>
+              <p>
+                <NumberCounter end={amount} start={100} delay="100" prefix = "+" />
+              </p>
               <span>{data}</span>
               <img src={image} alt="Milestone" />
             </motion.div>
