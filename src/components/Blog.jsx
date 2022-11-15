@@ -3,8 +3,12 @@ import styled from "styled-components";
 import play from "assets/play.png";
 import home from "assets/home.png";
 import Title from './Title';
+import { motion } from 'framer-motion';
+import { useScroll } from './useScroll'
+import { blogsAnimation } from '../animation'
 
 const Blog = () => {
+  const [element, controls] = useScroll()
 
   const blogsData = [
     {
@@ -24,12 +28,21 @@ const Blog = () => {
     },
   ]
   return (
-    <Section id="blog">
+    <Section id="blog" ref={element}>
       <Title value="Blog" />
       <div className="blogs">
         {blogsData.map(({title, type, description}) => {
           return (
-            <div className="blog">
+            <motion.div className="blog"
+            key={title}
+               variants={blogsAnimation}
+                animate={controls}
+                transition={{
+                  delay : 0.03,
+                  type: "tween",
+                  duration: 0.8,
+                }}
+            >
               <div className="image"> </div>
                 <div className="title">
                   <h3>{title}</h3>
@@ -42,7 +55,7 @@ const Blog = () => {
                   <img src={play} alt="play" />
                   <span>Read More</span>
                 </div>
-            </div>
+            </motion.div>
           )
         })}
       </div>

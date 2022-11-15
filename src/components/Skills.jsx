@@ -30,7 +30,7 @@ const Skills = () => {
     },
   ];
   return (
-    <Section>
+    <Section id='skills'>
       <Title value="skills" />
       <div className="skills_title">
         <p>Our Skills</p>

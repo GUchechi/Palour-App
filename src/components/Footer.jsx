@@ -1,24 +1,44 @@
 import React from 'react';
 import styled from "styled-components";
 import { BsFacebook, BsTwitter, BsYoutube, BsBehance } from 'react-icons/bs';
+import { motion } from 'framer-motion';
+import { useScroll } from './useScroll'
+import { footerTextAnimation } from '../animation'
 
 const Footer = () => {
+  const [element, controls] = useScroll()
   return (
-    <Foot>
-      <span>
+    <Foot ref={element}>
+      <motion.span
+          variants={footerTextAnimation}
+          animate={controls}
+          transition={{
+            delay: 0.03,
+            type: "tween",
+            duration: 0.8,
+        }}
+      >
         &copy; React Website Transition Animation
-      </span>
-      <div className="footer_social_icons">
+      </motion.span>
+      <motion.div className="footer_social_icons"
+          variants={footerTextAnimation}
+          animate={controls}
+          transition={{
+            delay: 0.02,
+            type: "tween",
+            duration: 0.8,
+        }}
+      >
         <BsFacebook />
         <BsTwitter />
         <BsYoutube />
         <BsBehance />
-      </div>
+      </motion.div>
     </Foot>
   )
 }
 
-const Foot = styled.footer`
+const Foot = styled(motion.footer)`
   background-color: var(--primary-color);
   color: #fff;
   display: flex;
