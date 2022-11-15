@@ -14,7 +14,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <ScrollToTop />
       <Home /> 
       <Services />
       <Portfolio /> 
@@ -25,6 +24,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
