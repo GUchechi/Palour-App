@@ -19,5 +19,8 @@ const Div = styled.div`
     color: var(--secondary-color);
     font-weight: 400;
   }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    display: none;
+  }
 `;
 export default Title
