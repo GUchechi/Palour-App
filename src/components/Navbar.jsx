@@ -77,10 +77,10 @@ const Nav = styled(motion.nav)`
     padding-top: 2rem;
     .brand__container {
     margin: 0 2rem;
-    .toggle {
+  }
+  .toggle {
       display: none;
     }
-  }
   .links {
     ul {
       list-style-type: none;

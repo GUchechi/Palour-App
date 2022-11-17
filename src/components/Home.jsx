@@ -98,7 +98,7 @@ const Section = styled.section`
     }
     .info {
       position: absolute;
-      bottom: -8rem;
+      bottom: -10rem;
       right: 0;
       background:var(--secondary-color);
       padding: 4rem;
