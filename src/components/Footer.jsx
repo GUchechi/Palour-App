@@ -62,6 +62,7 @@ const Foot = styled(motion.footer)`
   flex-direction: column;
   text-align: center;
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 `
