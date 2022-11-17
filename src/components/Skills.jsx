@@ -147,7 +147,7 @@ const Section = styled.section`
   @media screen and (min-width: 280px) and (max-width: 1080px) { 
     overflow-x: hidden;
     padding: 2rem 0;
-    height: 120vh;
+    height: 100vh;
     .background {
       display: none;
     }
