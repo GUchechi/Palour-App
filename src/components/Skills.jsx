@@ -144,5 +144,50 @@ const Section = styled.section`
       z-index: 2;
     }
   }
+  @media screen and (min-width: 280px) and (max-width: 1080px) { 
+    overflow-x: hidden;
+    padding: 2rem 0;
+    .background {
+      display: none;
+    }
+    .skills_title {
+      padding: 2rem;
+      text-align: center;
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    .skills {
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      &_bars {
+        padding: 0.2rem;
+        gap: 0rem;
+        align-items: center;
+        justify-content: center;
+        &_bar {
+          .container {
+            gap: 1rem;
+            progress {
+              width: 12rem;
+              height: 0.5rem;
+              &::-webkit-progress-bar {
+                height: 0.3rem;
+              }
+            }
+          }
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+      &_content {
+        padding: 0 2rem;
+      }
+    }
+  }
 `
 export default Skills

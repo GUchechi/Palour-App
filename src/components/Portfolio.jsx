@@ -114,6 +114,33 @@ const Section = styled.section`
     font-weight: 600;
   }
 }
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .grid {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight";
+      .grid-box {
+        height: 25rem !important;
+      }
+  }
+  .portfolio-more {
+      height: 1rem;
+      span {
+      color: #fff;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  }
+}
 
 `
 

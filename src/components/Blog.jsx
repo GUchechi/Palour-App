@@ -112,6 +112,14 @@ const Section = styled.section`
         color: var(--primary-color);
       }
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      margin-top: 3rem 0;
+      .blogs {
+        padding: 0 2rem;
+        grid-template-columns: 1fr;
+        margin: 3rem 1rem;
+      }
+    }
 `;
 
 export default Blog
