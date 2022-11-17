@@ -1,4 +1,4 @@
-.Testimonials {
+.testimonials {
     background: var(--primary-color);
     display: flex;
     gap: 1rem;
@@ -99,4 +99,43 @@
 .arrows > img {
     width: 1.5rem;
     cursor: pointer;
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .left-t >:nth-child(2), .left-t >:nth-child(3) {
+        font-size: xx-large;
+    }
+
+    .right-t {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .right-t > div {
+        position: relative;
+        display: none;
+    }
+ 
+    .right-t> img {
+        top: 0;
+        right:0 ;
+        position: relative;
+        align-self: center;
+    }
+
+    .right-t > :last-child{
+        display: flex;
+        bottom: 0;
+        left: 0;
+    }
+
+    .arrows {
+        gap: 2rem;
+    }
 }
