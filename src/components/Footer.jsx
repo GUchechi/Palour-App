@@ -63,6 +63,8 @@ const Foot = styled(motion.footer)`
   text-align: center;
   gap: 1rem;
   margin-top: 3rem;
+  padding: 4rem 0;
+  font-size: 0.9rem;
 }
 
 `
