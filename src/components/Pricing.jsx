@@ -27,35 +27,35 @@ const Pricing = () => {
 
   const data = [
     {
-      value: "Full face Rs.250",
+      value: "Full face #250",
       type: "Basic",
     },
     {
-      value: "Cheeks Rs. 90",
+      value: "Cheeks #90",
       type: "Basic",
     },
     {
-      value: "Jawline Rs.50",
+      value: "Jawline #50",
       type: "Basic",
     },
     {
-      value: "Lower Lip Rs.50",
+      value: "Lower Lip #50",
       type: "Basic",
     },
     {
-      value: "Upper Lip Rs.50",
+      value: "Upper Lip #50",
       type: "Basic",
     },
     {
-      value: "Under arms Rs.100",
+      value: "Under arms #100",
       type: "Basic",
     },
     {
-      value: "Full Legs Rs.450",
+      value: "Full Legs #450",
       type: "Pro",
     },
     {
-      value: "Half Legs Rs.300",
+      value: "Half Legs #300",
       type: "Pro",
     },
     {
@@ -268,14 +268,14 @@ const Section = styled.section`
         h2 {
           font-size: 1.5rem;
         }
-        _price {
+        &_price {
           p {
             font-size: 3rem;
           }
         }
       };
       &:nth-child(2) {
-        .pricing__plan__content {
+        .pricing_plan_content {
           padding: 0rem;
           border: none;
         }
